@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css?family=Coming+Soon');
+
+body, html {
+	margin: 0;
+	padding: 0;
+}
+body {
+    background: url(111.jpg) no-repeat center;
+    font-family: 'Coming Soon', cursive;
+    background-size: cover;
+}
+.forca__content {
+	display: block;
+	width: 80%;
+	height: 90%;
+	padding: 5% 10% 0;
+}
+.forca__content .titulo {
+	color: #000;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.3);
+    font-size: calc(1vw + 50px);
+    text-align: center;
+}
+.forca__content .letras {
+	width: 100%;
+	text-align: center;
+    margin-top: 20px;
+}
+.forca__content .letras .letra {
+    padding: 5px;
+    background: #FFF;
+    font-weight: 900;
+    border-radius: 3px;
+    display: inline-block;
+    margin: 3px;
+    min-width: 18px;
+    min-height: 18px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.1);
+    color: #53a09a;
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.1);
+    
+}
+.forca__content .palavra {
+	width: 100%;
+	text-align: center;
+}
+.forca__content .palavra .letra {
+    padding: 5px;
+    font-size: 30px;
+    font-weight: 900;
+    display: inline-block;
+    margin: 50px 3px 3px 3px;
+    min-width: 30px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.1);
+    color: #000;
+    border-bottom: 3px solid #000;
+    vertical-align: bottom;
+}
+.forca__content .palavra .letra.vazio {
+	color: transparent;
+	text-shadow: none;
+}
+.selecionarLetra .letra {
+    cursor: pointer;
+}
+.selecionarLetra .letra:hover {
+    background: #eee;
+    color: #999;
+}
+.boneco {
+    width: 150px;
+    margin: 30px auto 3px auto;
+    padding-bottom: 100px;
+    padding-top: 20px;
+    border-left: 3px solid #000;
+}
+.boneco .forca {
+    border-top: 3px solid #000;
+    border-right: 3px solid #000;
+    width: 72px;
+    height: 20px;
+    margin-top: -20px;
+    float: left;
+}
+.boneco .cabeca {
+    width: 50px;
+    height: 50px;
+    border: 3px solid #000;
+    border-radius: 50px;
+    margin: 0px auto;
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.1);
+    opacity: 1;
+}
+.boneco .bracoEsquerdo {
+    width: 3px;
+    height: 50px;
+    background: #000;
+    position: absolute;
+    margin-left: 50%;
+    left: -19px;
+    transform: rotate(45deg);
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.1);
+    opacity: 1;
+}
+.boneco .tronco {
+    width: 3px;
+    height: 80px;
+    background: #000;
+    margin: 0px auto;
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.1);
+    opacity: 1;
+}
+.boneco .bracoDireito {
+    width: 3px;
+    height: 50px;
+    background: #000;
+    position: absolute;
+    margin-right: 50%;
+    right: -22px;
+    transform: rotate(-45deg);
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.1);
+    opacity: 1;
+}
+.boneco .pernaEsquerdo {
+    width: 3px;
+    height: 50px;
+    background: #000;
+    position: absolute;
+    margin-left: 50%;
+    left: -19px;
+    margin-top: -10px;
+    transform: rotate(45deg);
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.1);
+    opacity: 1;
+}
+.boneco .pernaDireito {
+    width: 3px;
+    height: 50px;
+    background: #000;
+    position: absolute;
+    margin-right: 50%;
+    right: -22px;
+    margin-top: -10px;
+    transform: rotate(-45deg);
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.1);
+    opacity: 1;
+}
+.colunas {
+    margin: 20px auto 0 auto;
+    position: relative;
+    height: 256px;
+}
+.colunas .coluna {
+    bottom: 0px;
+    position: absolute;
+}

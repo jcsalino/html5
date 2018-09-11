@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>ForcaOnline</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+
+		<div class="forca__content">
+			<div class="titulo">ForcaOnline</div>
+			<div class="letras">
+				<div class="letra">Jogadas:</div>
+				<div class="letra">O</div>
+				<div class="letra">U</div>
+				<div class="letra">B</div>
+				<div class="letra">P</div>
+				<div class="letra">H</div>
+				<div class="letra">N</div>
+			</div>
+
+			<div class="colunas" id="exibeForca" style="max-width: 100%;">
+				<div class="coluna">
+					<div class="boneco" id = "forca">
+					</div>
+				</div>
+				<div class="coluna" id="divPalavra">
+					<div class="palavra" id = "exibirPalavra">
+                     <div class="letra"> </div>
+                     <div class="letra"> </div>
+                     <div class="letra"> </div>
+                     <div class="letra"> </div>
+                     <div class="letra"> </div>
+                     <div class="letra"> </div>
+                     <div class="letra"> </div>
+					</div>
+				</div>
+			</div>
+
+			<div class="letras">
+				<div class="letra">Letras:</div>
+				<div class="letra" id="letras"></div>
+				<div class="letra">Tentativas:</div>
+				<div class="letra" id="tentativas">3</div>
+			</div>
+
+			<div class="letras selecionarLetra">
+				<div class="letra">SELECIONE UMA LETRA:</div>
+				<br/>
+				<div class="letra" onclick="recebeLetra('Q')">Q</div>
+				<div class="letra" onclick="recebeLetra('W')">W</div>
+				<div class="letra" onclick="recebeLetra('E')">E</div>
+				<div class="letra" onclick="recebeLetra('R')">R</div>
+				<div class="letra" onclick="recebeLetra('T')">T</div>
+				<div class="letra" onclick="recebeLetra('Y')">Y</div>
+				<div class="letra" onclick="recebeLetra('U')">U</div>
+				<div class="letra" onclick="recebeLetra('I')">I</div>
+				<div class="letra" onclick="recebeLetra('O')">O</div>
+				<div class="letra" onclick="recebeLetra('P')">P</div>
+				<br/>
+				<div class="letra" onclick="recebeLetra('A')">A</div>
+				<div class="letra" onclick="recebeLetra('S')">S</div>
+				<div class="letra" onclick="recebeLetra('D')">D</div>
+				<div class="letra" onclick="recebeLetra('F')">F</div>
+				<div class="letra" onclick="recebeLetra('G')">G</div>
+				<div class="letra" onclick="recebeLetra('H')">H</div>
+				<div class="letra" onclick="recebeLetra('J')">J</div>
+				<div class="letra" onclick="recebeLetra('K')">K</div>
+				<div class="letra" onclick="recebeLetra('L')">L</div>
+				<br/>
+				<div class="letra" onclick="recebeLetra('Z')">Z</div>
+				<div class="letra" onclick="recebeLetra('X')">X</div>
+				<div class="letra" onclick="recebeLetra('C')">C</div>
+				<div class="letra" onclick="recebeLetra('V')">V</div>
+				<div class="letra" onclick="recebeLetra('B')">B</div>
+				<div class="letra" onclick="recebeLetra('N')">N</div>
+				<div class="letra" onclick="recebeLetra('M')">M</div>
+			</div>
+		</div>
+
+		<script type="text/javascript" src="js.js"></script>
+
+		<script type="text/javascript">
+			window.onload = function() {
+				var TAM_pal = document.getElementById('divPalavra').clientWidth;
+				document.getElementById('exibeForca').style.maxWidth = (TAM_pal + 5) + 'px';
+
+
+            console.log('Tam: ' + (TAM_pal + 5));
+            iniciar_jogo();
+			};
+		</script>
+	</body>
+</html>
