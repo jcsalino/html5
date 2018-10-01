@@ -1,0 +1,106 @@
+<html>
+   <head>
+
+   </head>
+   <body>
+      <div style="width:100%">
+         <div style="width:100%; display: inline-block">
+               <div class = "opcoesGerais"> 
+                  Placar Humano: <span id = 'placarHumano'>0</span> 
+               </div>
+               <div class = "opcoesGerais"> 
+                  Placar Maquina: <span id = 'placarMaquina'>0</span> 
+               </div>
+               <div class = "opcoesGerais"> 
+                  Placar Empate: <span id = 'placarEmpate'>0</span> 
+               </div>
+         </div>
+         <div id = "jo" class = "opcoesGeraisJ joIm">
+         </div>
+         <div id = "ken" class = "opcoesGeraisJ kenIm">
+         </div>
+         <div id = "po" class = "opcoesGeraisJ poIm">
+         </div>
+         <div style="width:100%; display: inline-block; text-align: center"><br></div>
+         <div style="width:100%; display: inline-block; text-align: center" id = "reinicar">REINICIAR</div>
+      </div>
+      <div id ="aimacao" class="divAnimacao displayNone">
+      </div>
+   </body>
+   <footer>
+      <script type="text/javascript" src ="main.js"></script>
+      <style>
+         .opcoesGerais{
+            width:33%; 
+            display: inline-block; 
+            position:relative;
+            text-align: center
+         }
+         .opcoesGeraisJ{
+            width:30%; 
+            height: 37%;
+            position:relative;
+            display: inline-block; 
+            text-align: center
+         }
+         .joIm{
+            background-image: url('jo.PNG');
+            background-repeat: no-repeat;
+            background-position: center;
+         }
+         .kenIm{
+            background-image: url('ken.PNG');
+            background-repeat: no-repeat;
+            background-position: center;
+         }
+         .poIm{
+            background-image: url('po.PNG');
+            background-repeat: no-repeat;
+            background-position: center;
+         }
+         .divAnimacao{
+            width:100%;
+            height:100%;
+            position:absolute;
+            top:0;
+            left:0;
+            text-align: center;
+            z-index:100;
+            background-color: #FFFFFF;
+         }
+         .animacaoJo{
+            width:49%; 
+            height: 37%;
+            display: inline-block; 
+            text-align: center;
+            background-image: url('jo.PNG');
+            background-repeat: no-repeat;
+            background-position: center;
+         }
+         .animacaoKen{
+            width:49%; 
+            height: 37%;
+            display: inline-block; 
+            text-align: center;
+            background-image: url('ken.PNG');
+            background-repeat: no-repeat;
+            background-position: center;
+         }
+         .animacaoPo{
+            width:49%; 
+            height: 37%;
+            display: inline-block; 
+            text-align: center;
+            background-image: url('po.PNG');
+            background-repeat: no-repeat;
+            background-position: center;
+         }
+         .displayNone{
+            display: none;
+         }
+         .displayBlock{
+            display: inline;
+         }
+      </style>
+   </footer>
+</html>
